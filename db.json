@@ -1,0 +1,59 @@
+{
+  "/": {
+    "use": "GET",
+    "responseBody": {
+      "status": 200,
+      "response": {
+        "id": 10,
+        "name": "User",
+        "email": "user@my-mail.uk"
+      }
+    }
+  },
+  "/user": {
+    "/profile": {
+      "use": "GET",
+      "responseBody": [
+        {
+          "status": 200,
+          "query": {
+            "id": 10
+          },
+          "response": {
+            "id": 10,
+            "name": "User 10",
+            "email": "user10@my-mail.uk"
+          }
+        },
+        {
+          "status": 200,
+          "query": {
+            "id": 11
+          },
+          "response": {
+            "id": 11,
+            "name": "User 11",
+            "email": "user11@my-mail.uk"
+          }
+        }
+      ]
+    }
+  },
+  "/admin": {
+    "/profile": {
+      "use": "POST",
+      "responseBody": {
+        "status": 200,
+        "body": {
+          "id": 10
+        },
+        "response": {
+          "id": 10,
+          "name": "Admin",
+          "email": "admin@my-mail.uk",
+          "phone": "0909871232"
+        }
+      }
+    }
+  }
+}
