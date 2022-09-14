@@ -9,7 +9,7 @@ This project provides a json mock server which can be deployed on AWS Labda leve
 - [Structure](#structure)
 - [Usage](#usage)
 - [Deployment](#deployment)
-  - [`Serveless (AWS Lambda)`](#aws-lambda)
+  - [`Serverless (AWS Lambda)`](#aws-lambda)
   - [`Other`](#other)
 
 ## How to install
@@ -41,7 +41,7 @@ After clonning the repo you can simply add you mock json data inside `db.json` o
 
 ## Deployment
 
-It can be deployed on any platform(server/serverless) and it works seamplessly.
+It can be deployed on any platform(server/serverless) and it works seamlessly.
 
 ### AWS-Lambda
 
@@ -51,8 +51,8 @@ It can be deployed on any platform(server/serverless) and it works seamplessly.
  Step 2 - Open your labda function and upload the .zip file. <br>
  Step 3 - Add a environment variable `ENVIRONMENT=production`. <br>
  Step 4 - Deploy the function 🎊 . <br>
- 
- 
+
+
 ### Other
 
 You can simply deploy this as an express app on any server.
